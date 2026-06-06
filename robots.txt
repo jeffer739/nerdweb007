@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Nerdy.github.io/sitemap.xml
+Sitemap: https://jeffer739.github.io/nerdweb007/sitemap.xml
