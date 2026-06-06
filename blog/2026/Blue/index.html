@@ -1,0 +1,117 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Blue | Welcome to Nerdweb. Let's hax, learn &amp; share pews! </title> <meta name="author" content="Chuks C. Clinton"> <meta name="description" content="My Blue walkthrough"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?v=f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?v=62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/prof_pic.jpg?v=829b82bbf59a4f636d8319640d183b0d"> <link rel="stylesheet" href="/assets/css/main.css?v=d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://nerdy.github.io/blog/2026/Blue/"> <script src="/assets/js/theme.js?v=5fea5159b787642c1bbc1f334d60f883"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Welcome to Nerdweb. Let's hax, learn &amp; share pews! </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">people </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/books/">Note</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Blue</h1> <p class="post-meta"> Created on May 19, 2026 </p> <p class="post-tags"> <a href="/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/blog/tag/intro"> <i class="fa-solid fa-hashtag fa-sm"></i> intro</a>   <a href="/blog/tag/test"> <i class="fa-solid fa-hashtag fa-sm"></i> test</a>   <a href="/blog/tag/windows"> <i class="fa-solid fa-hashtag fa-sm"></i> windows</a>   <a href="/blog/tag/wpe"> <i class="fa-solid fa-hashtag fa-sm"></i> wpe</a>   ·   <a href="/blog/category/blog"> <i class="fa-solid fa-tag fa-sm"></i> blog</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <h2 id="blue-walkthrough">Blue Walkthrough</h2> <p>I just exploited a machine vulnurable to Eternalblue &amp; am sharing my writeup on manual &amp; automatic exploitaion. Enjoy!</p> <h2 id="manual-exploitation-of-windows-eternalblue-vulnurability">Manual Exploitation of Windows Eternalblue Vulnurability</h2> <p>We start again with an Nmap scan</p> <p><img src="https://user-images.githubusercontent.com/64267672/125712269-7fb1a602-73dd-4f6f-8f98-49c800abe00d.png" alt="bluenmap"></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap -A 10.10.88.46
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-15 00:36 UTC
+Nmap scan report for 10.10.88.46
+Host is up (0.19s latency).
+Not shown: 991 closed ports
+PORT      STATE SERVICE            VERSION
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       Windows 7 Professional 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open  ssl/ms-wbt-server?
+| ssl-cert: Subject: commonName=Jon-PC
+| Not valid before: 2021-07-14T00:33:17
+|_Not valid after:  2022-01-13T00:33:17
+|_ssl-date: 2021-07-15T00:37:43+00:00; 0s from scanner time.
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49158/tcp open  msrpc              Microsoft Windows RPC
+49160/tcp open  msrpc              Microsoft Windows RPC
+Service Info: Host: JON-PC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1h14m59s, deviation: 2h30m00s, median: -1s
+|_nbstat: NetBIOS name: JON-PC, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 02:66:df:f5:fe:b3 (unknown)
+| smb-os-discovery: 
+|   OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1:professional
+|   Computer name: Jon-PC
+|   NetBIOS computer name: JON-PC\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2021-07-14T19:37:37-05:00
+| smb-security-mode: 
+|   account_used: &lt;blank&gt;
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-07-15T00:37:37
+|_  start_date: 2021-07-15T00:33:16
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 87.02 seconds
+</code></pre></div></div> <p>We see that SMB service is running on 445, and that the system is running Windows 7. Whenever I see Windows 7 and SMB in the same place I’m tempted to scan the machine to see if it is vulnerable to Eternal Blue or other vulnerabilities affecting the older operating systems).</p> <p>This time I’m scanning for this with nmap, Here’s scan result;</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap --script vuln 10.10.88.46
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-15 01:18 UTC
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.10.88.46
+Host is up (0.18s latency).
+Not shown: 991 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3389/tcp  open  ms-wbt-server
+| rdp-vuln-ms12-020: 
+|   VULNERABLE:
+|   MS12-020 Remote Desktop Protocol Denial Of Service Vulnerability
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2012-0152
+|     Risk factor: Medium  CVSSv2: 4.3 (MEDIUM) (AV:N/AC:M/Au:N/C:N/I:N/A:P)
+|           Remote Desktop Protocol vulnerability that could allow remote attackers to cause a denial of service.
+|           
+|     Disclosure date: 2012-03-13
+|     References:
+|       http://technet.microsoft.com/en-us/security/bulletin/ms12-020
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0152
+|   
+|   MS12-020 Remote Desktop Protocol Remote Code Execution Vulnerability
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2012-0002
+|     Risk factor: High  CVSSv2: 9.3 (HIGH) (AV:N/AC:M/Au:N/C:C/I:C/A:C)
+|           Remote Desktop Protocol vulnerability that could allow remote attackers to execute arbitrary code on the targeted system.
+|           
+|     Disclosure date: 2012-03-13
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0002
+|_      http://technet.microsoft.com/en-us/security/bulletin/ms12-020
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+|_sslv2-drown: 
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49158/tcp open  unknown
+49160/tcp open  unknown
+
+Host script results:
+|_samba-vuln-cve-2012-1182: NT_STATUS_ACCESS_DENIED
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|_      https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+
+Nmap done: 1 IP address (1 host up) scanned in 95.81 seconds
+</code></pre></div></div> <p>And apparently this machine is vulnurable to EternalBlue(MS17-010).</p> <h2 id="enumeration">Enumeration</h2> <p>After getting the exploit on our machine, we can run the <code class="language-plaintext highlighter-rouge">eternal-checker.py</code> script to confirm vulnurability</p> <p><img src="https://user-images.githubusercontent.com/64267672/125713974-8249bda5-cc76-4bfe-ab5b-24371f39f65f.png" alt="bluechecker"></p> <p>Generating Reverse shell from shell_prep.sh script, <img src="https://user-images.githubusercontent.com/64267672/125715717-f7419220-2721-4eff-bbf0-c3d69023365d.png" alt="Bluescript"></p> <p>Listening on netcat port &amp; boom we have shell as a low pridilege user, <img src="https://user-images.githubusercontent.com/64267672/125716045-2bf5e755-cd4c-42bf-ad76-078e69ceb348.png" alt="Bluerevshell"></p> <p>Most times We will need a tool like Mimikatz to help us. We will be using certutil.exe this time to pull the file as Powershell is being uncooperative on the older version of Windows.</p> <p>We are pulling the file from our server, naming it mimikatz.exe, and then running it after the ampersand. We have a Mimikatz command line, which will allow us to grab the NTLM hash we need.</p> <p><img src="https://user-images.githubusercontent.com/64267672/125717997-0864f234-890e-45eb-87ff-7fe9fb23b2d2.png" alt="bluecertutil"></p> <p>And we have the password hashes of the users of the machine; <img src="https://user-images.githubusercontent.com/64267672/125718457-f78ec0d0-d8a1-4572-8d61-5ddc6eae7a19.png" alt="Bluentlmhash"></p> <p>We can crack the password hash of the user of interest, this time (Jon), to get the plain-text password using Crackstation else we use John the ripper or hashcat or any similar tool.</p> <p>And that’s it for manual exploitation of the Windows Eternalblue Vulnurability.</p> <p>###Automatic Exploitaion of Eternalblue (Metasploit)</p> <p>We can go ahead &amp; search for the vulnurability on the metasploit database <img src="https://user-images.githubusercontent.com/64267672/125719894-e2068f0f-ab1b-4935-bd7d-692e2aa12828.png" alt="Bluemsf"></p> </div> </article> <br> <hr> <br> <ul class="list-disc pl-8"></ul> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="external nofollow noopener">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2" target="_blank" rel="external nofollow noopener">Displaying External Posts on Your al-folio Blog</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2026/first-post/">Coridor</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/plotly/">a post with plotly.js</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/photo-gallery/">a post with image galleries</a> </li> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Chuks C. Clinton. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?v=85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?v=2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?v=c15de51d4bb57887caa2c21988d97279"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?v=a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?v=2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?v=f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?v=a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?v=6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?v=ccc841c459bfc0e64c1c2b5acd10df02"></script> </body> </html>
