@@ -30,7 +30,205 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/nerdweb007/cv/";
           },
-        },{id: "post-coridor",
+        },{id: "post-road",
+        
+          title: "Road",
+        
+        description: "Road writeup",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/road/";
+          
+        },
+      },{id: "post-pico-walkthrough",
+        
+          title: "Pico Walkthrough",
+        
+        description: "PicoCTF",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/pico_writeup/";
+          
+        },
+      },{id: "post-pandora",
+        
+          title: "Pandora",
+        
+        description: "Pandora writeup",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/pandora/";
+          
+        },
+      },{id: "post-note",
+        
+          title: "Note",
+        
+        description: "A Note writeup",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/note/";
+          
+        },
+      },{id: "post-lampiao",
+        
+          title: "Lampiao",
+        
+        description: "Lampiao machine",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/lampiao/";
+          
+        },
+      },{id: "post-couch",
+        
+          title: "Couch",
+        
+        description: "Couch machine",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/couch/";
+          
+        },
+      },{id: "post-vulversity",
+        
+          title: "Vulversity",
+        
+        description: "A Vulversity ctf challenge",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/Vulnversity/";
+          
+        },
+      },{id: "post-timing",
+        
+          title: "Timing",
+        
+        description: "A HackTheBox Timing machine",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/Timing/";
+          
+        },
+      },{id: "post-solstice",
+        
+          title: "Solstice",
+        
+        description: "Proving Grounds Solstice machine",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/Solstice/";
+          
+        },
+      },{id: "post-skynet",
+        
+          title: "SkyNet",
+        
+        description: "A TryHackMe Skynet machine",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/Skynet/";
+          
+        },
+      },{id: "post-sar",
+        
+          title: "Sar",
+        
+        description: "A Proving grounds Sar machine",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/Sar/";
+          
+        },
+      },{id: "post-routerspace",
+        
+          title: "Routerspace",
+        
+        description: "HTB - RouterSpace machine",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/Routerspace/";
+          
+        },
+      },{id: "post-mustacchio",
+        
+          title: "Mustacchio",
+        
+        description: "THM - Mustacchio room",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/Mustacchio/";
+          
+        },
+      },{id: "post-funboxeasyenum",
+        
+          title: "FunboxEasyEnum",
+        
+        description: "A FunboxEasyEnum machine",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/FunboxEasyEnum/";
+          
+        },
+      },{id: "post-dirtypipe-cve-2022-0847",
+        
+          title: "DirtyPipe(CVE-2022-0847)",
+        
+        description: "A writeup on CVE-2022-0847",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/DirtyPipe/";
+          
+        },
+      },{id: "post-clamav",
+        
+          title: "ClamAV",
+        
+        description: "ClamAV walkthrough",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/ClamAV/";
+          
+        },
+      },{id: "post-cap",
+        
+          title: "Cap",
+        
+        description: "A HackTheBox writeup on Cap machine",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/Cap/";
+          
+        },
+      },{id: "post-tryhackme-cmspit",
+        
+          title: "TRYHACKME- CMSpit",
+        
+        description: "CMSpit room on TryhHackMe",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/CMSpit/";
+          
+        },
+      },{id: "post-coridor",
         
           title: "Coridor",
         

