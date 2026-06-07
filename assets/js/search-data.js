@@ -30,21 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/nerdweb007/cv/";
           },
-        },{id: "dropdown-note",
-              title: "Note",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/nerdweb007/books/";
-              },
-            },{id: "dropdown-blog",
-              title: "blog",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/nerdweb007/blog/";
-              },
-            },{id: "post-coridor",
+        },{id: "post-coridor",
         
           title: "Coridor",
         
