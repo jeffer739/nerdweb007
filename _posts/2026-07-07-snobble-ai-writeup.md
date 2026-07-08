@@ -130,6 +130,8 @@ This is called **prompt injection** — tricking an AI into ignoring its origina
 ---
 
 ## Flag
+
+You can try out this challenge here [Snobble — WebVerse Labs](https://dashboard.webverselabs-pro.com/mystery-challenges/snobble)
 WEBVERSE{34b7a58c****************}
 
 {% include figure.liquid loading="eager" path="assets/img/posts/snobble-solved.png" class="img-fluid rounded z-depth-1" %}
