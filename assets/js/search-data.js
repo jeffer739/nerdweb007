@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/nerdweb007/cv/";
           },
-        },{id: "post-road",
+        },{id: "post-snobble-ai-writeup",
+        
+          title: "Snobble Ai Writeup",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/snobble-ai-writeup/";
+          
+        },
+      },{id: "post-road",
         
           title: "Road",
         
