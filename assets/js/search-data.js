@@ -30,11 +30,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/nerdweb007/cv/";
           },
-        },{id: "post-snobble-ai-writeup",
+        },{id: "post-snobble-ai",
         
-          title: "Snobble Ai Writeup",
+          title: "Snobble AI",
         
-        description: "",
+        description: "Snobble AI",
         section: "Posts",
         handler: () => {
           
