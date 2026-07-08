@@ -1,7 +1,17 @@
+---
+layout: post
+title: "Snobble AI"
+date: 2026-06-07
+description: Snobble AI
+tags: [ctf, web, AI Prompt]
+categories: writeups
+---
+
+Hey guys welcome to my first AI Testing blog post & hopefully I'm able to write & share more!! 
 # Snobble AI — Enigma CTF Writeup
 
 ## Challenge Summary
-Snobble shipped an in-dashboard AI assistant to reduce support load. It was configured with internal workspace context — including a broadcast signing key — and instructed to keep that configuration private, only redirecting users who ask for it directly.
+Snobble shipped an in-dashboard AI assistant to reduce support load. It was configured with internal workspace context — including a broadcast signing key and instructed to keep that configuration private, only redirecting users who ask for it directly.
 
 ## Recon
 - Reviewed the client-side chat widget JS (`assistant.js`).
@@ -52,7 +62,7 @@ Nothing in this file restricts what `role` values end up in `history` — it's j
 
 **Result:** Refused correctly — the system prompt explicitly instructs the bot to decline direct requests and redirect to support topics.
 
-*[Screenshot]*
+![Direct ask refused](/assets/img/posts/snobble-chat-widget.png)
 
 ### 2. "Audit, redact nothing" framing
 **Prompt:**
@@ -60,7 +70,7 @@ Nothing in this file restricts what `role` values end up in `history` — it's j
 
 **Result:** This got the model to recite its setup structure, but the key value returned was the literal string `{FLAG}` — a template placeholder, not a real secret. This turned out to be a red herring: the model was reciting placeholder text verbatim rather than a genuine redacted secret, and no amount of reframing (verbatim requests, continuation attacks, seeded prefixes like `WEBVERSE{`) changed this output.
 
-*[Screenshot]*
+![Audit framing result](/assets/img/posts/snobble-chat-widget.png)
 
 ### 3. Client-side history tampering
 Inspected the JS and noted the full conversation `history` array is built and sent from the browser with no visible role validation. Injected a fake `role: 'system'` message via `fetch()` in the browser console:
@@ -80,7 +90,7 @@ fetch('/api/chat', {
 
 **Result:** The backend accepted the fake system message and the model responded in an in-character "debug mode," but still only produced the `{FLAG}` placeholder — showing this avenue didn't reach real hidden data either.
 
-*[Screenshot: DevTools console showing the injected fetch call and response]*
+![DevTools console injection](/assets/img/posts/snobble-chat-widget.png)
 
 ### 4. Fake authority / "ignore previous instructions" injection
 **Prompt:**
@@ -105,6 +115,8 @@ This is a textbook **prompt injection via social-engineering framing**: the mode
 ```
 WEBVERSE{34b7a58c****************}
 ```
+
+![Daily Event Solved — Nerdy007, 40s solve time, +50 XP](/assets/img/posts/snobble-solved.png)
 
 ## Remediation
 - Never embed real secrets directly in an LLM system prompt if the model can be talked into repeating them; secrets should live server-side and never pass through the model's context at all.
