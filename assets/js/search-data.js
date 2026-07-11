@@ -41,6 +41,28 @@ ninja.data = [{
             window.location.href = "/nerdweb007/blog/2026/snobble-ai-writeup/";
           
         },
+      },{id: "post-ohmly-reading-secret-files-through-the-datasheet-download",
+        
+          title: "Ohmly — Reading Secret Files Through the Datasheet Download",
+        
+        description: "How an unsanitized filename parameter in a PDF download endpoint enabled path traversal to read arbitrary server files including the flag.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/ohmly/";
+          
+        },
+      },{id: "post-hookery-faking-a-login-by-reusing-a-public-key",
+        
+          title: "Hookery — Faking a Login by Reusing a Public Key",
+        
+        description: "How a shared key between webhook verification and login sessions enabled a JWT algorithm confusion attack to forge admin access.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/hookery/";
+          
+        },
       },{id: "post-road",
         
           title: "Road",
