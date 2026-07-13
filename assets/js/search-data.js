@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/nerdweb007/cv/";
           },
-        },{id: "post-snobble-ai",
+        },{id: "post-ashwick",
+        
+          title: "Ashwick",
+        
+        description: "How a local file inclusion vulnerability combined with Apache access log poisoning achieved remote code execution on the Township of Ashwick challenge.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/ashwick-lfi-log-poisoning/";
+          
+        },
+      },{id: "post-snobble-ai",
         
           title: "Snobble AI",
         
