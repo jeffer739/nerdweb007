@@ -38,7 +38,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/nerdweb007/blog/2026/ashwick-lfi-log-poisoning/";
+            window.location.href = "/nerdweb007/blog/2026/ashwick/";
           
         },
       },{id: "post-snobble-ai",
