@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/nerdweb007/cv/";
           },
-        },{id: "post-ashwick",
+        },{id: "post-statica-bypassing-ai-assistant-secret-masking",
+        
+          title: "Statica — Bypassing AI Assistant Secret Masking",
+        
+        description: "How asking an AI assistant to return a secret in a different format completely bypassed a regex-based masking filter.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/statica/";
+          
+        },
+      },{id: "post-ashwick",
         
           title: "Ashwick",
         
