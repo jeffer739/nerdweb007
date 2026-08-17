@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Chuks Clinton — Penetration Tester | Web Application Security",
+          description: "Chuks Clinton — Cybersecurity | Penetration Testing | Application Security",
           section: "Navigation",
           handler: () => {
             window.location.href = "/nerdweb007/cv/";
@@ -684,49 +684,49 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-web-application-security-testing",
+          title: 'Web Application Security Testing',
+          description: "Hands-on web security labs, vulnerability discovery, and methodology",
           section: "Projects",handler: () => {
               window.location.href = "/nerdweb007/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-api-security-testing",
+          title: 'API Security Testing',
+          description: "Practical API testing with request analysis, authorization checks, and GraphQL security research",
           section: "Projects",handler: () => {
               window.location.href = "/nerdweb007/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-reconnaissance-amp-attack-surface-mapping",
+          title: 'Reconnaissance &amp;amp; Attack-Surface Mapping',
+          description: "Structured reconnaissance and enumeration for authorized security labs",
           section: "Projects",handler: () => {
               window.location.href = "/nerdweb007/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-security-testing-methodology",
+          title: 'Security Testing Methodology',
+          description: "A repeatable workflow for lab testing, evidence collection, and reporting",
           section: "Projects",handler: () => {
               window.location.href = "/nerdweb007/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-security-automation-amp-tooling",
+          title: 'Security Automation &amp;amp; Tooling',
+          description: "Small scripts and workflows that make repetitive security tasks easier to reproduce",
           section: "Projects",handler: () => {
               window.location.href = "/nerdweb007/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+            },},{id: "projects-ctf-amp-security-lab-write-ups",
+          title: 'CTF &amp;amp; Security Lab Write-ups',
+          description: "Hands-on challenge work documented as reproducible security notes",
           section: "Projects",handler: () => {
               window.location.href = "/nerdweb007/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+            },},{id: "projects-application-security-testing",
+          title: 'Application Security Testing',
+          description: "Applying QA and security-testing experience to application behaviour",
           section: "Projects",handler: () => {
               window.location.href = "/nerdweb007/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
+            },},{id: "projects-web-security-research-notes",
+          title: 'Web Security Research Notes',
+          description: "Focused investigations into common web application security weaknesses",
           section: "Projects",handler: () => {
               window.location.href = "/nerdweb007/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
+            },},{id: "projects-security-learning-amp-continuous-practice",
+          title: 'Security Learning &amp;amp; Continuous Practice',
+          description: "A structured system for turning labs into durable security knowledge",
           section: "Projects",handler: () => {
               window.location.href = "/nerdweb007/projects/9_project/";
             },},{id: "teachings-data-science-fundamentals",
