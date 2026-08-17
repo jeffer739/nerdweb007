@@ -4,9 +4,9 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf
+cv_pdf: /assets/rendercv/rendercv_output/Chuks_Clinton_Cybersecurity_CV.pdf
 cv_format: jsonresume
-description: Chuks Clinton — Penetration Tester | Web Application Security
+description: Chuks Clinton — Cybersecurity | Penetration Testing | Application Security
 toc:
   sidebar: left
 ---
