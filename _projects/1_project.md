@@ -1,33 +1,43 @@
 ---
 layout: page
 title: Web Application Security Testing
-description: Hands-on web security labs, vulnerability discovery, and methodology
+description: Hands-on web security assessment with concrete vulnerability evidence
 importance: 1
 category: security
 ---
 
-## Overview
+## Case Study: File Upload Validation Bypass
 
-A collection of hands-on web application security exercises focused on understanding how vulnerabilities arise, how to validate them safely, and how to document findings clearly.
+One documented authorized-lab assessment involved a web application with an upload feature protected by a file-extension filter. The exercise demonstrated how relying on a deny-list of extensions can fail when the server accepts another executable extension.
 
-## Areas explored
+## Attack surface
 
-- Reconnaissance and attack-surface discovery
-- Authentication and authorization testing
-- Input validation and injection testing
-- Access-control weaknesses
-- Server-side request and application-logic issues
-- Burp Suite-based request analysis
+- Web application exposed on a non-standard HTTP port
+- Internal upload functionality
+- Upload validation based on file extensions
+- Publicly reachable upload directory
 
-## Methodology
+## Assessment flow
 
-1. Define the authorized target and scope.
-2. Map the application and identify interesting endpoints and parameters.
-3. Capture and manipulate requests to understand application behaviour.
-4. Validate suspected vulnerabilities with controlled test cases.
-5. Record evidence, impact, and remediation considerations.
-6. Turn the useful findings into reproducible notes and write-ups.
+1. Performed service discovery with Nmap.
+2. Enumerated application content and identified the `/internal` upload functionality.
+3. Tested the upload control with a controlled set of file extensions.
+4. Observed that the expected `.php` extension was rejected while an alternative executable extension was accepted.
+5. Validated the impact in the intentionally vulnerable lab by retrieving the uploaded file and obtaining command execution.
+6. Enumerated local privilege boundaries and identified an unsafe SUID-enabled `systemctl` binary.
+7. Documented the resulting privilege-escalation path and evidence.
+
+## Security lessons
+
+- **File upload security:** validate content and execution context rather than relying only on a blacklist of extensions.
+- **Host privilege boundaries:** review SUID/SGID binaries and service-management permissions after initial access.
 
 ## Evidence
 
-Detailed lab notes and selected write-ups are published in the blog section of this portfolio. Only intentionally vulnerable labs, CTF environments, or otherwise authorized targets are documented publicly.
+The original technical write-up contains screenshots, request/response observations, enumeration output, and the complete lab path from reconnaissance through privilege escalation.
+
+Only intentionally vulnerable labs, CTF environments, or otherwise authorized targets are documented publicly.
+
+## Skills demonstrated
+
+Nmap · content enumeration · Burp Suite · upload validation testing · Linux privilege enumeration · SUID analysis · technical reporting
