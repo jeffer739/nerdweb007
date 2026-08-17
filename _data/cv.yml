@@ -1,14 +1,7 @@
 cv:
   name: Chuks Clinton
-  label: Cybersecurity | Penetration Testing | Application Security
-  email: ""
+  headline: Cybersecurity | Penetration Testing | Application Security
   location: Lagos, Nigeria
-  image: ""
-  summary: >
-    Computer Engineering graduate focused on penetration testing, web application security,
-    API security, vulnerability assessment, and practical security testing. Hands-on experience
-    with security labs, CTFs, web application testing, reconnaissance, and security tooling,
-    supported by professional application testing experience.
 
   social_networks:
     - network: GitHub
@@ -17,12 +10,14 @@ cv:
       username: chuks-clinton
 
   sections:
+    Summary:
+      - Computer Engineering graduate focused on penetration testing, web application security, API security, vulnerability assessment, and practical security testing. Hands-on experience with security labs, CTFs, web application testing, reconnaissance, and security tooling, supported by professional application testing experience.
+
     Education:
       - institution: Michael Okpara University of Agriculture Umudike
         location: Nigeria
         area: Computer Engineering
-        studyType: B.Eng.
-        start_date: ""
+        degree: B.Eng.
         end_date: 2025
 
     Experience:
@@ -31,9 +26,7 @@ cv:
         location: Nigeria
         start_date: 2021
         end_date: 2023
-        summary: >
-          Application testing across web and mobile environments with a focus on identifying
-          defects, security-relevant behaviour, and issues that required collaboration with development teams.
+        summary: Application testing across web and mobile environments with a focus on identifying defects, security-relevant behaviour, and issues that required collaboration with development teams.
         highlights:
           - Tested MyMTN web and mobile application functionality.
           - Investigated application behaviour and identified vulnerabilities and defects.
@@ -45,48 +38,32 @@ cv:
         location: Nigeria
         start_date: 2015
         end_date: 2017
-        summary: >
-          Provided first-line technical support and troubleshooting while using browser developer
-          tools to investigate web and application issues.
+        summary: Provided first-line technical support and troubleshooting while using browser developer tools to investigate web and application issues.
         highlights:
           - Provided first-line technical support and troubleshooting.
           - Investigated browser and web application issues using developer tools.
           - Supported users with practical technical problem solving.
 
     Skills:
-      - name: Web Application Security
-        level: Advanced
-        icon: fa-solid fa-globe
-        keywords: "Burp Suite, HTTP, Authentication, Authorization, Input Validation, OWASP concepts"
-      - name: Penetration Testing
-        level: Intermediate
-        icon: fa-solid fa-shield-halved
-        keywords: "Reconnaissance, Enumeration, Vulnerability Assessment, Exploitation, Reporting"
-      - name: API Security
-        level: Intermediate
-        icon: fa-solid fa-code
-        keywords: "REST, GraphQL, Authentication, Authorization, Request Analysis"
-      - name: Security Tooling
-        level: Intermediate
-        icon: fa-solid fa-terminal
-        keywords: "Burp Suite, Nmap, Metasploit, BloodHound, Hydra, Linux"
-      - name: QA & Automation
-        level: Intermediate
-        icon: fa-solid fa-vial
-        keywords: "Selenium, Playwright, Cypress, API Testing, Web Testing"
-      - name: Development
-        level: Intermediate
-        icon: fa-solid fa-code
-        keywords: "Python, JavaScript, HTML, CSS, Git, Figma"
+      - label: Web Application Security
+        details: Burp Suite, HTTP, Authentication, Authorization, Input Validation, OWASP concepts
+      - label: Penetration Testing
+        details: Reconnaissance, Enumeration, Vulnerability Assessment, Exploitation, Reporting
+      - label: API Security
+        details: REST, GraphQL, Authentication, Authorization, Request Analysis
+      - label: Security Tooling
+        details: Burp Suite, Nmap, Metasploit, BloodHound, Hydra, Linux
+      - label: QA & Automation
+        details: Selenium, Playwright, Cypress, API Testing, Web Testing
+      - label: Development
+        details: Python, JavaScript, HTML, CSS, Git, Figma
 
     Languages:
-      - name: English
-        summary: "Professional working proficiency"
+      - label: English
+        details: Professional working proficiency
 
     Interests:
-      - name: Application Security
-        icon: fa-solid fa-shield-halved
-        keywords: "Web Security, API Security, Penetration Testing, Vulnerability Research"
-      - name: Continuous Learning
-        icon: fa-solid fa-graduation-cap
-        keywords: "CTFs, Security Labs, Technical Writing, Security Research"
+      - label: Application Security
+        details: Web Security, API Security, Penetration Testing, Vulnerability Research
+      - label: Continuous Learning
+        details: CTFs, Security Labs, Technical Writing, Security Research
