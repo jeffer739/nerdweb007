@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/nerdweb007/cv/";
           },
-        },{id: "post-statica-bypassing-ai-assistant-secret-masking",
+        },{id: "post-file-upload-validation-bypass-from-reconnaissance-to-privilege-escalation",
+        
+          title: "File Upload Validation Bypass: From Reconnaissance to Privilege Escalation",
+        
+        description: "A structured walkthrough of an authorized Vulnversity lab assessment, focusing on upload validation, evidence collection, and post-compromise privilege enumeration.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nerdweb007/blog/2026/file-upload-validation-bypass/";
+          
+        },
+      },{id: "post-statica-bypassing-ai-assistant-secret-masking",
         
           title: "Statica — Bypassing AI Assistant Secret Masking",
         
@@ -686,7 +697,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-web-application-security-testing",
           title: 'Web Application Security Testing',
-          description: "Hands-on web security labs, vulnerability discovery, and methodology",
+          description: "Hands-on web security assessment with concrete vulnerability evidence",
           section: "Projects",handler: () => {
               window.location.href = "/nerdweb007/projects/1_project/";
             },},{id: "projects-api-security-testing",
@@ -711,7 +722,7 @@ ninja.data = [{
               window.location.href = "/nerdweb007/projects/5_project/";
             },},{id: "projects-ctf-amp-security-lab-write-ups",
           title: 'CTF &amp;amp; Security Lab Write-ups',
-          description: "Hands-on challenge work documented as reproducible security notes",
+          description: "Curated hands-on security work showing reconnaissance, exploitation, privilege escalation, and reporting",
           section: "Projects",handler: () => {
               window.location.href = "/nerdweb007/projects/6_project/";
             },},{id: "projects-application-security-testing",
