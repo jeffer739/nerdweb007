@@ -18,12 +18,12 @@ cv:
 
   sections:
     Education:
-      - institution: ""
+      - institution: Michael Okpara University of Agriculture Umudike
         location: Nigeria
         area: Computer Engineering
-        studyType: Bachelor's Degree
+        studyType: B.Eng.
         start_date: ""
-        end_date: ""
+        end_date: 2025
 
     Experience:
       - company: UPGRADED ERA / MTN Nigeria
