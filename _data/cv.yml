@@ -1,6 +1,6 @@
 cv:
   name: Chuks Clinton
-  headline: Cybersecurity | Penetration Testing | Application Security
+  headline: Penetration Tester | Application Security
   location: Lagos, Nigeria
 
   social_networks:
@@ -10,8 +10,75 @@ cv:
       username: chuks-clinton
 
   sections:
-    Summary:
-      - Computer Engineering graduate focused on penetration testing, web application security, API security, vulnerability assessment, and practical security testing. Hands-on experience with security labs, CTFs, web application testing, reconnaissance, and security tooling, supported by professional application testing experience.
+    Profile:
+      - Security professional with 4+ years of combined experience across penetration testing, quality assurance, IT support, application security, Active Directory, and vulnerability research. Skilled in identifying and validating security flaws through manual testing, automated tooling, and independent bug bounty research, and in translating findings into clear, actionable reports for technical and non-technical stakeholders. Active in the offensive security community as a CTF competitor, team captain, and mentor, with hands-on lab experience across TryHackMe, HackTheBox, and PortSwigger Web Security Academy, including Active Directory attack paths.
+
+    Experience:
+      - company: Stella Ops
+        position: Penetration Tester
+        location: Remote
+        start_date: 2023
+        end_date: 2025
+        highlights:
+          - Performed web and mobile application security testing using manual and automated techniques across authentication, session management, and input validation layers.
+          - Identified and validated vulnerabilities including authentication flaws, injection issues, business logic weaknesses, and security misconfigurations.
+          - Produced detailed technical reports with proof-of-concept steps, CVSS-aligned severity ratings, and remediation guidance for engineering and non-technical stakeholders.
+          - Partnered with development teams throughout the remediation lifecycle, advising on secure coding practices and validating fixes before closure.
+          - Applied risk-based prioritization to findings, helping teams focus remediation effort on the highest-impact vulnerabilities first.
+
+      - company: UPGRADED ERA
+        position: Quality Assurance
+        location: Port Harcourt, Nigeria
+        start_date: 2021
+        end_date: 2023
+        highlights:
+          - Conducted functional and security-focused testing on MyMTN mobile and web applications to ensure reliability, usability, and resilience against common defects.
+          - Identified and documented application defects and vulnerabilities with detailed, reproducible steps for engineering triage.
+          - Collaborated with development teams to troubleshoot issues, verify fixes, and improve overall application stability.
+          - Performed usability testing and analyzed user feedback to inform product and system quality improvements.
+
+      - company: LOCTECH NG
+        position: IT Support Intern
+        location: Port Harcourt, Nigeria
+        start_date: 2015
+        end_date: 2017
+        highlights:
+          - Delivered first-line technical support for hardware, software, and networking issues across the organization.
+          - Installed, configured, and maintained workstations, system updates, and business applications for end users.
+          - Diagnosed system and connectivity problems using tools such as Firebug and Chrome DevTools to identify web application errors.
+
+    Security Research & Projects:
+      - name: Vulnerability Research
+        highlights:
+          - Independently discovered and reported multiple valid vulnerabilities through HackerOne bug bounty programs.
+
+      - name: Hackathon Achievements
+        highlights:
+          - 1st Place, Digital Encode Cybersecurity Hackathon CTF.
+          - 1st Place, ABC Cyber Hackathon CTF.
+          - 2nd Place, PicoCTF Africa (Team).
+          - Finalist, CySec Cybersecurity Hackathon.
+
+      - name: Lab Research & Documentation
+        highlights:
+          - Conducted independent reconnaissance, enumeration, and web application testing in controlled lab environments, documenting attack paths against simulated enterprise networks.
+          - Achieved domain administrator access in a lab environment through Zerologon exploitation, NTLM relay, and password spraying against weak credentials.
+          - Assessed Active Directory and Microsoft Entra ID configurations for weak authentication controls, excessive user permissions, and misconfigurations using BloodHound and Impacket.
+          - Hands-on practice across TryHackMe, HackTheBox, and PortSwigger Web Security Academy.
+
+    Technical Skills:
+      - label: Application Security
+        details: Web & Mobile Application Penetration Testing, Vulnerability Assessment, Risk Analysis & Prioritization, Business Logic Testing, OWASP Top 10, MITRE ATT&CK, Manual & Automated Security Testing, Bug Bounty / Responsible Disclosure, Technical Reporting, Security Awareness & Peer Mentoring
+      - label: Security Tools
+        details: Burp Suite, Nmap, Metasploit, SQLmap, Gobuster, Subfinder, Wireshark
+      - label: Infrastructure / AD Security
+        details: Active Directory, Windows, Linux, Kerberos/NTLM, BloodHound, Impacket
+      - label: Systems & Networking
+        details: TCP/IP Networking Fundamentals, Windows 10/11, Windows Server 2019/2022, VPNs, Microsoft 365, Azure, AWS
+      - label: Databases & Platforms
+        details: PostgreSQL, MongoDB, Redis, LibreOffice
+      - label: Programming & Scripting
+        details: Python, Bash
 
     Education:
       - institution: Michael Okpara University of Agriculture Umudike
@@ -20,50 +87,28 @@ cv:
         degree: B.Eng.
         end_date: 2025
 
-    Experience:
-      - company: UPGRADED ERA / MTN Nigeria
-        position: QAP Tester
-        location: Nigeria
-        start_date: 2021
-        end_date: 2023
-        summary: Application testing across web and mobile environments with a focus on identifying defects, security-relevant behaviour, and issues that required collaboration with development teams.
-        highlights:
-          - Tested MyMTN web and mobile application functionality.
-          - Investigated application behaviour and identified vulnerabilities and defects.
-          - Collaborated with development teams to communicate findings clearly.
-          - Applied structured testing and evidence-based reporting.
+    Certifications:
+      - ICSI, UK — CNSS Certified Network Security Specialist
+      - Pentester Academy — WebApp Security Professional
 
-      - company: LOCTECH NG
-        position: IT Support Intern
-        location: Nigeria
-        start_date: 2015
-        end_date: 2017
-        summary: Provided first-line technical support and troubleshooting while using browser developer tools to investigate web and application issues.
+    Affiliations:
+      - institution: Digital Overdose
+        area: Community Volunteer / CTF Team Captain
         highlights:
-          - Provided first-line technical support and troubleshooting.
-          - Investigated browser and web application issues using developer tools.
-          - Supported users with practical technical problem solving.
-
-    Skills:
-      - label: Web Application Security
-        details: Burp Suite, HTTP, Authentication, Authorization, Input Validation, OWASP concepts
-      - label: Penetration Testing
-        details: Reconnaissance, Enumeration, Vulnerability Assessment, Exploitation, Reporting
-      - label: API Security
-        details: REST, GraphQL, Authentication, Authorization, Request Analysis
-      - label: Security Tooling
-        details: Burp Suite, Nmap, Metasploit, BloodHound, Hydra, Linux
-      - label: QA & Automation
-        details: Selenium, Playwright, Cypress, API Testing, Web Testing
-      - label: Development
-        details: Python, JavaScript, HTML, CSS, Git, Figma
+          - Lead team participation in regional and international Capture The Flag competitions.
+          - Coordinate vulnerability research and collaborative challenge-solving across the team.
+          - Host Discord-based training sessions during CTF conventions and hackathons to onboard and upskill members in offensive security fundamentals.
+      - institution: HackSouth
+        area: Member
+      - institution: Stella Ops
+        area: Member
+      - institution: RedTeamNG
+        area: Member
 
     Languages:
       - label: English
-        details: Professional working proficiency
-
-    Interests:
-      - label: Application Security
-        details: Web Security, API Security, Penetration Testing, Vulnerability Research
-      - label: Continuous Learning
-        details: CTFs, Security Labs, Technical Writing, Security Research
+        details: Native
+      - label: Dutch
+        details: Basics
+      - label: French
+        details: Basics
